@@ -22,6 +22,4 @@
 
 + (UIImage *)imageWithFileType:(NSString *)fileType;
 
-+ (UIImage *)mlb_imageWithName:(NSString *)imageName cached:(BOOL)cached;
-
 @end
