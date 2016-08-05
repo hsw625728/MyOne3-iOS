@@ -182,7 +182,7 @@
 
 - (UIBarButtonItem *)rightPlantItem {
     UIButton *plantButton = [MLBUIFactory buttonWithImageName:@"nav_me_normal" highlightImageName:@"nav_me_highlighted" target:self action:@selector(plantButtonClicked)];
-    plantButton.frame = (CGRect){{0, 0}, CGSizeMake(20, 28)};
+    plantButton.frame = (CGRect){{0, 0}, CGSizeMake(28, 28)};
     return [[UIBarButtonItem alloc] initWithCustomView:plantButton];
 }
 

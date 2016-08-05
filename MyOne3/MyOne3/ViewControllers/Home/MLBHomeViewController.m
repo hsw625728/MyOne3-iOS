@@ -54,7 +54,9 @@
     self.navigationItem.titleView = titleView;
     
     [self addNavigationBarLeftSearchItem];
-    [self addNavigationBarRightMeItem];
+    //hanshaowen
+    //[self addNavigationBarRightMeItem];
+    [self addNavigationBarRightItems];
     
     [self initDatas];
     [self setupViews];
