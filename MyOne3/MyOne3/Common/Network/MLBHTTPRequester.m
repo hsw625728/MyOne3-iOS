@@ -31,7 +31,7 @@
     return [NSString stringWithFormat:@"%@%@", MLBApiServerAddress, api];
 }
 
-+ (void)postWithApi:(NSString *)api success:(SuccessBlock)successBlock fail:(FailBlock)failBlock {
++ (void)postWithApi:(NSString *)api parameters:(NSDictionary *)params success:(SuccessBlock)successBlock fail:(FailBlock)failBlock {
     AFHTTPSessionManager *manager = [MLBHTTPRequester AFHTTPSessionManager];
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     [manager POST:[MLBHTTPRequester urlWithApi:api] parameters:nil constructingBodyWithBlock:NULL progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -256,4 +256,14 @@
     [MLBHTTPRequester getWithURI:[NSString stringWithFormat:MLBApiGetPraiseComments, MLBApiMovie, movieId, @"0"] success:successBlock fail:failBlock];
 }
 
+#pragma mark - Login pangxie
+
+// 登录模块
++ (void)requestLoginWithID:(NSString *)id pwd:(NSString *)pwd success:(SuccessBlock)successBlock fail:(FailBlock)failBlock {
+    NSDictionary *params = @{
+                             @"id":@"hsw",
+                             @"pass":@"111"
+                             };
+    [MLBHTTPRequester postWithApi:MLBApiLogin parameters:params success:successBlock fail:failBlock];
+}
 @end

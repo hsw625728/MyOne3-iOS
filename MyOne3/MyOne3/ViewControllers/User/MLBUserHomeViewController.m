@@ -38,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.hideNavigationBar = YES;
+    //self.hideNavigationBar = YES;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.edgesForExtendedLayout = UIRectEdgeAll;
     
@@ -52,9 +52,9 @@
 #pragma mark - Private Method
 
 - (void)initDatas {
-    sectionTitles = @[@"设置"];
-    rowTitles = @[@[@"其他设置"]];
-    rowImageNames = @[@[@"center_setting"]];
+    sectionTitles = @[@"收藏", @"设置"];
+    rowTitles = @[@[@"图文", @"文章", @"电影", @"消息"], @[@"其他设置", @"登录"]];
+    rowImageNames = @[@[@"tab_home_normal", @"tab_read_normal", @"tab_movie_normal", @"tab_music_normal"], @[@"center_setting", @"nav_me_normal"]];
 }
 
 - (void)setupViews {
@@ -153,6 +153,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 1 && indexPath.row == 1)
+    {
+        [self presentLoginOptsViewController];
+        return;
+    }
+    
     [self.navigationController pushViewController:[[MLBSettingsViewController alloc] init] animated:YES];
 }
 

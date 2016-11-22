@@ -117,4 +117,8 @@ typedef void(^FailBlock)(NSError *error);
 // 获取电影评论列表
 + (void)requestMovieDetailsPraiseCommentsById:(NSString *)movieId success:(SuccessBlock)successBlock fail:(FailBlock)failBlock;
 
+#pragma mark - Login pangxie
+
+// 登录模块
++ (void)requestLoginWithID:(NSString *)id pwd:(NSString *)pwd success:(SuccessBlock)successBlock fail:(FailBlock)failBlock;
 @end

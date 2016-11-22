@@ -13,6 +13,7 @@
 
 // 服务器地址
 #define MLBApiServerAddress                     @"http://v3.wufazhuce.com:8000/api"
+//#define MLBApiServerAddress                     @"http://mengyoutu.cn/server"
 
 // 获取文章详情
 #define MLBApiGetReadDetails                    @"/%@/%@"
@@ -87,5 +88,9 @@
 // 电影短评
 #define MLBApiMovieReviews                      @"/movie/%@/review/%@/%@"
 
+#pragma mark - Login pangxie
+
+//登录模块
+#define MLBApiLogin                             @"/login"
 
 #endif /* MLBApiConstants_h */

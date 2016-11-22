@@ -397,6 +397,7 @@
 		23FC0B741C7EABDF0019A16E /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
 		23FC0B761C7EBFD00019A16E /* MLBPoilcyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLBPoilcyViewController.h; sourceTree = "<group>"; };
 		23FC0B771C7EBFD00019A16E /* MLBPoilcyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLBPoilcyViewController.m; sourceTree = "<group>"; };
+		8459BF261D7EBC2F0022EC8C /* MLBLoginUPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBLoginUPViewController.h; sourceTree = "<group>"; };
 		AE35E8E8B042DD82FB5F3253 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD56C7CB2A277632076FF04B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1146,6 +1147,7 @@
 				23FC0B701C7E9A310019A16E /* MLBLiginOptsViewController.m */,
 				23FC0B761C7EBFD00019A16E /* MLBPoilcyViewController.h */,
 				23FC0B771C7EBFD00019A16E /* MLBPoilcyViewController.m */,
+				8459BF261D7EBC2F0022EC8C /* MLBLoginUPViewController.h */,
 			);
 			path = LoginRegister;
 			sourceTree = "<group>";
